@@ -1,0 +1,28 @@
+.Sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 300px;
+	background-color: $light-color;
+	color: $dark-color;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 2rem;
+	padding-bottom: 5rem;
+	z-index: 1;
+
+	&__menu {
+		margin: 0;
+		list-style-type: none;
+	}
+
+	&__item {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+		font-weight: 700;
+		text-align: right;
+	}
+}

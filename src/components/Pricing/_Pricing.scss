@@ -1,0 +1,45 @@
+.Pricing {
+	display: grid;
+	padding: 1rem;
+	background: #ededed;
+
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 1rem;
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+	}
+
+	&__plan {
+    opacity: 0;
+    transform: translateY(300px);
+
+		max-width: 300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		height: min-content;
+		border: 1px solid #cccccc;
+		border-radius: 8px;
+		overflow: hidden;
+		background: #ffffff;
+		box-shadow: 1px 1px 5px 1px #cccccc;
+		transition: 0.3s;
+		text-align: center;
+		padding: 15px;
+
+		&:hover {
+			box-shadow: 1px 7px 5px 1px #cccccc;
+		}
+	}
+
+	&__image {
+		width: 50%;
+	}
+}

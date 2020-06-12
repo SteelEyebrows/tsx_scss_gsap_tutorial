@@ -1,0 +1,40 @@
+$primary-color: #f7ba08;
+$dark-color: #2c2c2c;
+$light-color: #fff;
+
+@import './components/Sidebar/Sidebar';
+@import './components/Pricing/Pricing';
+
+* {
+	box-sizing: border-box;
+}
+
+.App {
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+
+	&__header {
+		background-color: $dark-color;
+		color: $light-color;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: calc(10px + 2vmin);
+	}
+
+	&__title {
+		max-width: 768px;
+	}
+
+	&__hamburger {
+		position: fixed;
+		right: 1rem;
+		top: 1rem;
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+	}
+}
